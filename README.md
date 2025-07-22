@@ -7,6 +7,16 @@ Este projeto é a interface web para o CRUD de motos, que se comunica com a API 
 - Node.js
 - Angular CLI (`npm install -g @angular/cli`)
 
+  ## 🔧 Instalação
+
+```bash
+git clone https://github.com/codefull425/CRUD-motocicletas-ANGULAR
+cd CRUD-motocicletas-ANGULAR/Desktop/angular/crud-motos/motos-front
+npm install
+ng serve
+```
+
+
 ## 🌐 Rotas da Aplicação
 
 | Caminho        | Componente          | Descrição                     |
