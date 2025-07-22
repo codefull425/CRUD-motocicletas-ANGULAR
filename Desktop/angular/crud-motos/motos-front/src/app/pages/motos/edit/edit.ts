@@ -36,7 +36,6 @@ export class EditComponent implements OnInit {
   }
 
 
-
   onSubmit(): void {
     this.http.put(`http://127.0.0.1:8000/api/motos/${this.id}`, this.form.value)
       .subscribe(() => this.router.navigate(['/motos']));

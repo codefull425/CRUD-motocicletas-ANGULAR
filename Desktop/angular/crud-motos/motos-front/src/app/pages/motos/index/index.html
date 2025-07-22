@@ -1,11 +1,15 @@
 <h1>Lista de Motos</h1>
 
-<a routerLink="/motos/create">Cadastrar nova moto</a>
+<a routerLink="/motos/create" class="add-btn">+ Cadastrar nova moto</a>
 
-<ul>
-  <li *ngFor="let moto of motos">
-    {{ moto.marca }} - {{ moto.modelo }} - {{ moto.ano }} - R$ {{ moto.preco }}
-    <a [routerLink]="['/motos/edit', moto.id]">Editar</a>
-    <button (click)="excluirMoto(moto.id)">Excluir</button>
+<ul class="moto-list">
+  <li *ngFor="let moto of motos" class="moto-item">
+    <div class="moto-info">
+      <strong>{{ moto.marca }}</strong> - {{ moto.modelo }} - {{ moto.ano }} - R$ {{ moto.preco }}
+    </div>
+    <div class="actions">
+      <a [routerLink]="['/motos/edit', moto.id]" class="btn edit">Editar</a>
+      <button (click)="excluirMoto(moto.id)" class="btn delete">Excluir</button>
+    </div>
   </li>
 </ul>
