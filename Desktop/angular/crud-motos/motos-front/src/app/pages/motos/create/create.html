@@ -1,0 +1,32 @@
+<h2>Cadastrar Nova Moto</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <label for="marca">Marca:</label>
+  <input id="marca" formControlName="marca" type="text" />
+  <div *ngIf="form.get('marca')?.invalid && form.get('marca')?.touched">
+    Campo obrigatório.
+  </div>
+
+  <label for="modelo">Modelo:</label>
+  <input id="modelo" formControlName="modelo" type="text" />
+  <div *ngIf="form.get('modelo')?.invalid && form.get('modelo')?.touched">
+    Campo obrigatório.
+  </div>
+
+  <label for="ano">Ano:</label>
+  <input id="ano" formControlName="ano" type="number" />
+  <div *ngIf="form.get('ano')?.invalid && form.get('ano')?.touched">
+    Campo obrigatório.
+  </div>
+
+  <label for="preco">Preço:</label>
+  <input id="preco" formControlName="preco" type="number" step="0.01" />
+  <div *ngIf="form.get('preco')?.invalid && form.get('preco')?.touched">
+    Campo obrigatório.
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Salvar</button>
+  <a routerLink="/motos">Cancelar</a>
+
+</form>

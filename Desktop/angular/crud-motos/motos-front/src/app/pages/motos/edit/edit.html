@@ -1,0 +1,18 @@
+<h1>Editar Moto</h1>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>Marca:</label>
+  <input formControlName="marca" type="text" />
+
+  <label>Modelo:</label>
+  <input formControlName="modelo" type="text" />
+
+  <label>Ano:</label>
+  <input formControlName="ano" type="number" />
+
+  <label>Preço:</label>
+  <input formControlName="preco" type="number" />
+
+  <button type="submit">Atualizar</button>
+</form>
+
