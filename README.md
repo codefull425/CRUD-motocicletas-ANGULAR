@@ -17,7 +17,7 @@ Este projeto é a interface web para o CRUD de motos, que se comunica com a API 
 
 ## 🔗 Comunicação com API
 
-O frontend consome a API hospedada em `http://127.0.0.1:8000/api/motos`.
+O frontend consome a API hospedada em http://127.0.0.1:8000
 
 | Método | Rota              | Descrição                 |
 |--------|-------------------|---------------------------|
